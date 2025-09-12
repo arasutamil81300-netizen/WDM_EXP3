@@ -1,11 +1,12 @@
-### EX3 Implementation of GSP Algorithm In Python
+# EX3 Implementation of GSP Algorithm In Python
 ### DATE: 12-09-2025
 ### NAME: V Raksha Dharanika
 ### REG :212223230167
-### AIM: To implement GSP Algorithm In Python.
-### Description:
+## AIM: 
+To implement GSP Algorithm In Python.
+## Description:
 The Generalized Sequential Pattern (GSP) algorithm is a data mining technique used for discovering frequent patterns within a sequence database. It operates by identifying sequences that frequently occur together. GSP works by employing a depth-first search strategy to explore and extract frequent patterns efficiently.
-### Steps:
+## Steps:
 1. <strong>Database Scanning:</strong> GSP scans the sequence database to determine the support of each item in the dataset.
 2. <strong>Candidate Generation:</strong> It generates a set of candidate sequences using frequent items found in the previous step.
 3. <strong>Pattern Growth:</strong> It extends the candidate sequences by merging them to form longer patterns, checking their support against a user-defined minimum support threshold.
@@ -14,7 +15,7 @@ The Generalized Sequential Pattern (GSP) algorithm is a data mining technique us
 GSP finds application in various domains such as market basket analysis, web usage mining, bioinformatics, and more. For instance, in retail, GSP can identify common purchasing patterns, helping businesses understand customer behavior for targeted marketing or inventory management.
 </p>
 
-### Procedure:
+## Procedure:
 <p align="justify">
 1. From collections import defaultdict, from itertools import combinations: Imports necessary libraries/modules. defaultdict is
 used to create a dictionary with default values and combinations generates all possible combinations of a sequence.</p>
@@ -38,7 +39,8 @@ for each wear category.</p>
 <p align="justify">
 8. Visulaize the sequence patterns using matplotlib.
 </p>
-### Program:
+
+## Program:
 
 ```python
 from collections import defaultdict
@@ -100,7 +102,7 @@ if results:
 else:
     print("No frequent sequential patterns found.")
 ```
-### Output:
+## Output:
 ```
 
 Frequent Sequential Patterns for Dataset 1:
@@ -450,7 +452,7 @@ Pattern: ('a', 'b', 'b', 'a', 'd', 'e'), Support: 3
 
 
 ```
-### Visualization:
+## Visualization:
 ```python
 import matplotlib.pyplot as plt
 
@@ -480,10 +482,10 @@ results2 = gsp(dataset2, min_support)
 visualize_patterns_line(results1, "Dataset 1")
 visualize_patterns_line(results2, "Dataset 2")
 ```
-### Output:
+## Output:
 <img width="929" height="542" alt="image" src="https://github.com/user-attachments/assets/90c19dcd-6b24-4aa8-bcfe-a742b7bc66fc" />
 
 <img width="924" height="545" alt="image" src="https://github.com/user-attachments/assets/3b6ccfb0-f51a-4a55-90e2-f7fc7855cedc" />
 
-### Result:
+## Result:
 The GSP algorithm successfully generated frequent sequential patterns for both datasets.

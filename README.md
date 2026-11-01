@@ -1,7 +1,7 @@
 # EX3 Implementation of GSP Algorithm In Python
-### DATE: 12-09-2025
-### NAME: V Raksha Dharanika
-### REG :212223230167
+### DATE: 01:11:2026
+### NAME: THAMIZHARASU R
+### REG :212225233002
 ## AIM: 
 To implement GSP Algorithm In Python.
 ## Description:
